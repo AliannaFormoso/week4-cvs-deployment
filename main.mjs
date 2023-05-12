@@ -28,7 +28,7 @@ form.addEventListener("submit", function (e) {
 
 
 // function to make dates more readable to human beings
-function readableDates(date) {
+function humanize(date) {
 
     const formattedDate = dayjs(date)
     const timeDiff = Math.abs(formattedDate.diff(Date.now(), 'months'))
@@ -48,7 +48,7 @@ function readableDates(date) {
 const $cardDates = document.querySelectorAll(".dates");
 
   $cardDates.forEach(element => {
-    const readDate = readableDates(element.getAttribute("datetime"));
+    const readDate = humanize(element.getAttribute("datetime"));
     element.innerHTML = `GRADUATION DATE: <br> ${readDate}`;
   });
 

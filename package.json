@@ -1,14 +1,14 @@
 {
   "name": "cvs",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass": "sass styles/main.scss styles/main.css"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,9 @@
   "dependencies": {
     "dayjs": "^1.11.7",
     "vite": "^4.3.5"
+  },
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.62.1"
   }
 }

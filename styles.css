@@ -333,7 +333,7 @@ li:hover {
 }
 
 
-/*-------- Media queries --------*/
+/*-------- Media queries for Desktop ------------------------*/
 
 @media screen and (min-width:900px) {
    
@@ -363,7 +363,7 @@ header li {
 }
 
 header i {
-    padding-top: 5px;
+    padding-top: 4px;
     padding-right: 5px;
 }
 
